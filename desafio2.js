@@ -1,6 +1,7 @@
-let tagEsquerda = document.querySelector('.desafioTags0')
-let tagHtml = document.querySelector('.desafioTags1')
-let tagDireita = document.querySelector('.desafioTags2')
+let html1 = document.querySelector('.desafioTags0')
+let body1 = document.querySelector('.desafioTags1')
+let body2 = document.querySelector('.desafioTags2')
+let html2 = document.querySelector('.desafioTags3')
 let corrigir = document.querySelector('.corrigir')
 let limpar = document.querySelector('#limpar')
 let linha = document.querySelector('#linha')
@@ -8,14 +9,14 @@ let respostaCorreta = document.querySelector('section')
 let respostaErrada = document.querySelector('header')
 let lista = []
 
-tagEsquerda.addEventListener("click", () => {
-    tagEsquerda.style.backgroundColor = "#b6c3d6";
+html1.addEventListener("click", () => {
+    html1.style.backgroundColor = "#b6c3d6";
     lista.push(0)
     console.log(lista)
     let criar0 = document.createElement('div')
     criar0.setAttribute('class', 'criar0')
     criar0.innerHTML = `
-    <button class="desafioTags0"><</button>
+    <button class="desafioTags0">< html > </button>
     `
     linha.appendChild(criar0)
 
