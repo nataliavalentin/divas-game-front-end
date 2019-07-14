@@ -4,6 +4,8 @@ let tagDireita = document.querySelector('.desafioTags2')
 let corrigir = document.querySelector('.corrigir')
 let limpar = document.querySelector('#limpar')
 let linha = document.querySelector('#linha')
+let respostaCorreta = document.querySelector('section')
+let respostaErrada = document.querySelector('header')
 let lista = []
 
 tagEsquerda.addEventListener("click", () => {
@@ -42,15 +44,17 @@ tagHtml.addEventListener("click", () => {
     <button class="desafioTags1">html</button>
     `
     linha.appendChild(criar1)
-
-
 })
 
 limpar.addEventListener("click", () => {
     tagDireita.style.backgroundColor = "#220458";
     tagEsquerda.style.backgroundColor = "#220458";
     tagHtml.style.backgroundColor = "#220458";
-    lista.innerHTML = " "
+    linha.innerHTML = " "
+    lista = []
+    respostaErrada.style.visibility = 'hidden'
+    respostaCorreta.style.visibility = 'hidden'
+
 })
 
 corrigir.addEventListener("click", () => {
@@ -61,8 +65,14 @@ corrigir.addEventListener("click", () => {
     console.log(myLista)
     if (myCorrecao === myLista) {
         console.log('asertou miserável')
+        respostaCorreta.style.visibility = 'visible'
+
+
+
     } else {
         console.log('tdo errado')
+        respostaErrada.style.visibility = 'visible'
+        respostaCorreta.style.display = 'none'
     }
 
 })

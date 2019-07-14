@@ -42,7 +42,7 @@ aside {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 70vh;
+    height: 60vh;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
@@ -53,6 +53,7 @@ aside {
     display: flex;
     justify-content: space-around;
     width: 80vw;
+    padding-bottom: 15px;
 }
 
 #limpar,
@@ -63,15 +64,15 @@ aside {
     color: white;
     font-family: 'Paytone One', sans-serif;
     font-size: 14pt;
-    background-color: #FF43A3;
+    background-color: #AA009F;
     border-style: none;
     border-radius: 10px;
+    visibility: visible;
 }
 
 aside p {
     font-family: 'DM Sans', sans-serif;
     padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .texto {
@@ -81,9 +82,76 @@ aside p {
 }
 
 #linha {
-    width: 400px;
-    height: 100px;
+    width: 343px;
+    height: 80px;
     border-bottom: 1px solid gray;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+section {
+    width: 100vw;
+    height: 20vh;
+    background-color: #F5BFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    background-color: #FCCDCD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.continuar {
+    cursor: pointer;
+    width: 125px;
+    height: 45px;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 14pt;
+    background-color: #AA009F;
+    border-style: none;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.proximo {
+    cursor: pointer;
+    width: 125px;
+    height: 45px;
+    color: #AA009F;
+    font-family: 'Paytone One', sans-serif;
+    background-color: #F5BFFF;
+    font-size: 14pt;
+    border-style: none;
+    border: 1px solid #AA009F;
+    border-radius: 10px;
+}
+
+.proximo2 {
+    cursor: pointer;
+    width: 125px;
+    height: 45px;
+    color: red;
+    font-family: 'Paytone One', sans-serif;
+    background-color: #F5BFFF;
+    font-size: 14pt;
+    border-style: none;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.box {
+    width: 66vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
