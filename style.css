@@ -1,5 +1,5 @@
 body {
-    background-image: url(../front-end/images/fundo.png);
+    background-image: url(./images/fundo.png);
     background-size: cover;
     display: flex;
     overflow: hidden;
@@ -211,6 +211,6 @@ input {
     cursor: pointer;
 }
 
-.cadastrese{
-    cursor: pointer; 
+.cadastrese {
+    cursor: pointer;
 }

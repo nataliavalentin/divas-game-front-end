@@ -10,7 +10,7 @@ let senha = document.getElementById('senha')
 erika.addEventListener('click', () => {
     fundo2.style.display = 'none',
         event.preventDefault()
-    fetch('http://localhost:8000/divas/cadastro', {
+    fetch('https://divasgameapi.herokuapp.com/divas/cadastro', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
@@ -33,6 +33,7 @@ erika.addEventListener('click', () => {
 
     .then(function(data) {
         console.log(data)
+        window.location.reload()
     })
 
     .catch(function(erro) {
