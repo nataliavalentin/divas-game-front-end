@@ -7,7 +7,7 @@ let senha2 = document.getElementById('senhaUsername')
 entrarLoginUsername.addEventListener('click', () => {
     fundo.style.display = 'none',
         event.preventDefault()
-    fetch('http://localhost:8000/divas/login', {
+    fetch('https://divasgameapi.herokuapp.com/divas/login', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
