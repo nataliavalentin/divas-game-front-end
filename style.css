@@ -142,6 +142,16 @@ section {
 #foguete {
     position: absolute;
     display: none;
+    animation: foguete 7s linear infinite;
+}
+
+@keyframes foguete {
+    from {
+        transform: translate(0px, -200px)
+    }
+    to {
+        transform: translate(-2500px, 500px)
+    }
 }
 
 #fundo2 {

@@ -43,8 +43,9 @@ decolar.addEventListener('click', () => {
             temporizador.innerHTML = tempo;
             if (tempo == 0) {
 
-                console.log("foguete");
                 clearInterval(interval);
+                foguete.style.display = 'block'
+                tempo.style.display = 'none'
             }
         }, 1000)
 
