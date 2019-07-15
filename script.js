@@ -5,6 +5,11 @@ let fecharLogin = document.getElementById('fechar-login');
 let fecharCadastro = document.getElementById('fechar-cadastro');
 let cadastro = document.getElementById('cadastro');
 let cadastrese = document.querySelector('.cadastrese');
+let decolar = document.querySelector('#decolar');
+let popup = document.querySelector('#popupBemvinda');
+let temporizador = document.querySelector('#temporizador');
+let tempo = 5;
+let foguete = document.querySelector('#foguete')
 
 entrar.addEventListener('click', () => {
     fundo.style.visibility = 'visible';
@@ -25,4 +30,22 @@ fecharCadastro.addEventListener('click', () => {
 cadastrese.addEventListener('click', () => {
     fundo2.style.visibility = 'visible';
     fundo.style.visibility = 'hidden';
+})
+
+decolar.addEventListener('click', () => {
+    popup.style.display = 'none'
+    temporizador.style.display = 'block'
+    temporizador.innerHTML = tempo;
+    let interval = setInterval(
+        function() {
+            console.log(tempo);
+            --tempo;
+            temporizador.innerHTML = tempo;
+            if (tempo == 0) {
+
+                console.log("foguete");
+                clearInterval(interval);
+            }
+        }, 1000)
+
 })
