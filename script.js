@@ -45,8 +45,16 @@ decolar.addEventListener('click', () => {
 
                 clearInterval(interval);
                 foguete.style.display = 'block'
-                tempo.style.display = 'none'
+                temporizador.innerHTML = " "
             }
+            setTimeout(function blabla() {
+                window.location.replace("nivel.html")
+                foguete.style.display = 'none'
+                console.log('oi')
+                fundo.remove()
+
+            }, 8000);
         }, 1000)
+
 
 })

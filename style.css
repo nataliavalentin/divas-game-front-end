@@ -140,17 +140,17 @@ section {
 }
 
 #foguete {
-    position: absolute;
     display: none;
-    animation: foguete 7s linear infinite;
+    animation: foguete 3s linear;
+    padding-left: 2000px;
 }
 
 @keyframes foguete {
     from {
-        transform: translate(0px, -200px)
+        transform: translate(-1500px, 500px)
     }
     to {
-        transform: translate(-2500px, 500px)
+        transform: translate(100px, -500px)
     }
 }
 
