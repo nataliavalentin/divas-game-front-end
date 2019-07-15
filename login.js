@@ -48,10 +48,12 @@ entrarLoginUsername.addEventListener('click', () => {
             })
             .catch(function(erro) {
                 console.log(erro)
+                console.log('deu ruim')
             })
     })
 
     .catch(function(erro) {
         console.log(erro)
+        console.log('deu ruim')
     })
 });

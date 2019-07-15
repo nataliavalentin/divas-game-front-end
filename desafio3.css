@@ -1,6 +1,7 @@
 body {
     background-color: #F9FAFE;
     margin: 0;
+    overflow-y: hidden;
 }
 
 nav {
@@ -139,7 +140,7 @@ header {
     height: 45px;
     color: red;
     font-family: 'Paytone One', sans-serif;
-    background-color: #F5BFFF;
+    background-color: #fccdcd;
     font-size: 14pt;
     border-style: none;
     border: 1px solid red;

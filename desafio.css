@@ -1,6 +1,7 @@
 body {
     background-color: #F9FAFE;
     margin: 0;
+    overflow-y: hidden;
 }
 
 nav {
