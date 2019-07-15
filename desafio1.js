@@ -66,13 +66,14 @@ corrigir.addEventListener("click", () => {
     if (myCorrecao === myLista) {
         console.log('asertou miserável')
         respostaCorreta.style.visibility = 'visible'
+        respostaErrada.remove()
 
 
 
     } else {
         console.log('tdo errado')
         respostaErrada.style.visibility = 'visible'
-        respostaCorreta.style.display = 'none'
+        respostaCorreta.remove()
     }
 
 })

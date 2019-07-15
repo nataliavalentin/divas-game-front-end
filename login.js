@@ -39,7 +39,7 @@ entrarLoginUsername.addEventListener('click', () => {
                 for (let i = 0; i <= API.length - 1; i++) {
                     if (API[i].username == acheiemail) {
                         console.log(API[i]._id)
-                        alert('BEM VINDA' + API[i].username)
+                        alert('Bem vinda, ' + API[i].username + '!')
                     }
                 }
             })

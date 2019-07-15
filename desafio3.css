@@ -24,37 +24,33 @@ h1 {
     color: #220458;
 }
 
-.desafioTags0,
-.desafioTags1,
-.desafioTags2,
-.desafioTags3 {
+button {
     cursor: pointer;
-    width: 110px;
+    width: 400px;
     height: 45px;
-    color: white;
+    color: #AA009F;
     font-family: 'Paytone One', sans-serif;
     font-size: 14pt;
-    background-color: #220458;
+    background-color: #F5BFFF;
     border-style: none;
     border-radius: 10px;
+    border: 1px solid #AA009F;
 }
 
 aside {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: column;
     height: 60vh;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
     padding-top: 50px;
 }
 
-.botoes {
+.column {
     display: flex;
-    justify-content: space-around;
-    width: 80vw;
-    padding-bottom: 15px;
+    flex-direction: column;
+    height: 110px;
+    justify-content: space-between;
 }
 
 #limpar,
