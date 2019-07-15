@@ -5,12 +5,11 @@ let respostaErrada = document.querySelector('header')
 
 certo.addEventListener("click", () => {
     respostaCorreta.style.visibility = 'visible'
-    respostaErrada.remove()
+    contador()
 })
 
 
 errado.addEventListener("click", () => {
     respostaErrada.style.visibility = 'visible'
     respostaCorreta.remove()
-    console.log('errou')
 })

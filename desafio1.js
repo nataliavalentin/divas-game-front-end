@@ -8,6 +8,8 @@ let respostaCorreta = document.querySelector('section')
 let respostaErrada = document.querySelector('header')
 let lista = []
 
+limpaContador();
+
 tagEsquerda.addEventListener("click", () => {
     tagEsquerda.style.backgroundColor = "#b6c3d6";
     lista.push(0)
@@ -66,7 +68,10 @@ corrigir.addEventListener("click", () => {
     if (myCorrecao === myLista) {
         console.log('asertou miserável')
         respostaCorreta.style.visibility = 'visible'
-        respostaErrada.remove()
+        limpar.disabled = true
+        corrigir.disabled = true
+        contador()
+
 
 
 
@@ -74,6 +79,8 @@ corrigir.addEventListener("click", () => {
         console.log('tdo errado')
         respostaErrada.style.visibility = 'visible'
         respostaCorreta.remove()
+        limpar.disabled = true
+        corrigir.disabled = true
     }
 
 })

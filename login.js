@@ -1,6 +1,8 @@
 let entrarLoginUsername = document.querySelector('#entrarLoginUsername')
 let username2 = document.getElementById('loginUsername')
 let senha2 = document.getElementById('senhaUsername')
+let bemvinda = document.querySelector('.nomeUsuaria')
+let popupLogin = document.querySelector('#fundo3')
 
 
 
@@ -39,7 +41,8 @@ entrarLoginUsername.addEventListener('click', () => {
                 for (let i = 0; i <= API.length - 1; i++) {
                     if (API[i].username == acheiemail) {
                         console.log(API[i]._id)
-                        alert('Bem vinda, ' + API[i].username + '!')
+                        bemvinda.innerHTML = API[i].username
+                        popupLogin.style.visibility = 'visible'
                     }
                 }
             })

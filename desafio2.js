@@ -80,13 +80,17 @@ corrigir.addEventListener("click", () => {
     if (myCorrecao === myLista) {
         console.log('asertou miserável')
         respostaCorreta.style.visibility = 'visible'
-
-
+        limpar.disabled = true
+        corrigir.disabled = true
+        contador()
 
     } else {
         console.log('tdo errado')
         respostaErrada.style.visibility = 'visible'
         respostaCorreta.style.display = 'none'
+        limpar.disabled = true
+        corrigir.disabled = true
+
     }
 
 })

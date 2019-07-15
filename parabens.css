@@ -5,7 +5,23 @@ body {
 }
 
 aside {
+    padding-top: 107px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.acertou {
+    color: #FF43A3;
+}
+
+.continue {
+    color: white;
+    font-size: 14pt;
+}
+
+.boxPonto {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
