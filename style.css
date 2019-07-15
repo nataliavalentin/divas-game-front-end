@@ -217,6 +217,19 @@ h3 {
     color: #FF43A3;
 }
 
+#entrarLoginUsername,
+#entrarCadastrar {
+    width: 200px;
+    height: 45px;
+    background-color: #FF43A3;
+    color: white;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 15pt;
+    border-style: none;
+    border-radius: 20px;
+    margin: 6px;
+}
+
 #entrarLogin {
     width: 320px;
     height: 45px;
