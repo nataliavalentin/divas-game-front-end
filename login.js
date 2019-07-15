@@ -26,6 +26,26 @@ entrarLoginUsername.addEventListener('click', () => {
 
     .then(function(data) {
         console.log(data)
+        console.log("foi")
+
+        fetch('https://divasgameapi.herokuapp.com/divas')
+            .then((response) => {
+                return response.json()
+            })
+            .then((API) => {
+                console.log(API)
+                let acheiemail = (username2.value).toString()
+                console.log(acheiemail)
+                for (let i = 0; i <= API.length - 1; i++) {
+                    if (API[i].username == acheiemail) {
+                        console.log(API[i]._id)
+                        alert('BEM VINDA' + API[i].username)
+                    }
+                }
+            })
+            .catch(function(erro) {
+                console.log(erro)
+            })
     })
 
     .catch(function(erro) {
